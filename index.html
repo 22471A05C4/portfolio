@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="styles.css">
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,36 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bhargavi Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 
-  <!-- FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
-
-
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-
-<nav>
-  <a href="#home" class="logo">Portfolio</a>
-  <ul>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </ul>
-</nav>
-
+  <nav>
+    <a href="#home" class="logo">Portfolio</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
 <section id="home">
   <div class="home-container">
     <div class="text-content">
       <div class="text-line">
-        <h2>Hii, I'm <span class="name">Bhargavi</span></h2>
+        <h2>Hello, I'm <span class="name" >Bhargavi</span></h2>
         <h3><span class="animated-text">Web Designer</span></h3>
       </div>
-      <p style="padding-top: 30px;">
+      <p >
         I have strong skills in web designing, creating visually appealing and responsive websites.
 I focus on building user-friendly, modern, and functional web designs.
 I am passionate about delivering high-quality websites that provide a great user experience.
@@ -43,32 +43,27 @@ I am passionate about delivering high-quality websites that provide a great user
 
       </p>
     </div>
-    <div class="image-content">
-      <img src="./Images/profile.jpg" alt="Bhargavi Photo" class="profile-pic">
-    </div>
+    
   </div>
 </section>
-
-<!-- Other Sections -->
-<!-- (About, Skills, Projects, Contact) st -->
 
 <!-- About -->
 <section id="about">
   <div class="about-wrapper">
     <div class="about-left" >
-      <img src="./Images/profile.jpg" alt="About Photo" >
+      <img src="./myphoto.jpg" alt=" My Photo" >
       <div class="overlay">My Name is Bhargavi</div>
     </div>
     <div class="about-right">
       <h1 class="about-heading" >ABOUT ME</h1>
       <h3 class="about-name" style="padding-top: 30px;">BHARGAVI - WEB DESIGNER</h3>
-      <p style="padding-top: 30px;" >I am a passionate Web Designer with a strong eye for detail and creativity.  <br>                 I specialize in creating clean, modern, and fully responsive websites that not only look great but also offer a seamless user experience.<br>
+      <p >I am a passionate Web Designer with a strong eye for detail and creativity.  <br>                 I specialize in creating clean, modern, and fully responsive websites that not only look great but also offer a seamless user experience.<br>
 
         With a solid understanding of HTML, CSS, and JavaScript, I can bring designs to life with beautiful layouts and interactive features.<br> Whether it's building a personal portfolio, a business website, or a landing page, I focus on writing clean and efficient code.
         
         I love transforming ideas into visually stunning and functional websites.<br> I'm committed to continuous learning and staying updated with the latest web development trends and best practices.<br>I'm currently learning new frameworks like React to further enhance my skills and deliver even more dynamic web solutions.<br>
         
-        I believe that a well-designed website is key to building strong online presence. My goal is to not just meet client expectations but to exceed them. Let's collaborate and create websites that leave a lasting impression.</p>
+        I believe that a well-designed website is key to building strong online presence.<br> My goal is to not just meet client expectations but to exceed them. Let's collaborate and create websites that leave a lasting impression.</p>
        
     </div>
   </div>
@@ -76,8 +71,8 @@ I am passionate about delivering high-quality websites that provide a great user
 
 <!-- Skills -->
 <section id="skills">
-  <h2 style="padding-top: 25px;">Skills</h2>
-  <div class="skillbar-wrapper" style="padding-top: 85px;">
+  <h2 style="padding-top: 30px; margin-top: 40px; font-size: 40px;">Skills</h2>
+  <div class="skillbar-wrapper" style="padding-top: 10px;">
     <div class="skillbar">
       <div class="skillbar-title">HTML</div>
       <div class="skillbar-bar">
@@ -110,23 +105,29 @@ I am passionate about delivering high-quality websites that provide a great user
         <div class="skillbar-fill python">100%</div>
       </div>
     </div>
+    <div class="skillbar">
+      <div class="skillbar-title">App Development</div>
+      <div class="skillbar-bar">
+        <div class="skillbar-fill appdevelopment">80%</div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- Projects -->
 <section id="projects">
-  <h2 class="projects-heading">My Projects</h2>
+  <h2 class="projects-heading" style="font-size:40px;" >My Projects</h2>
   <div class="projects-cards">
     <div class="project-card">
       <img src="https://tse3.mm.bing.net/th?id=OIP.lT79lU6bZ7KSQrKYfdtj9QHaEu&pid=Api&P=0&h=180" alt="React Project">
       <h3>React Project</h3>
       <p>I have successfully completed a React project focused on alumni management.I developed and completed an alumni management system using React, enhancing user interaction and database connectivity.</p>
-      <a href="#" class="project-btn">View Project</a>
+      <a href="./reactallumini.mp4" class="project-btn">View Project</a>
     </div>
 
     <div class="project-card">
       <img src="https://tse4.mm.bing.net/th?id=OIP.31aNyWrcFvWjD6pjP0KGeAHaE8&pid=Api&P=0&h=180" alt="Android app">
-      <h3>Andoid App development Using Kotlin</h3>
+      <h3>Android App development Using Kotlin</h3>
       <p>I have successfully completed an Android app called "Mechanic Services" using Kotlin,to connect users with nearby mechanics quickly and easily.</p>
       <a href="#" class="project-btn">View Project</a>
     </div>
@@ -137,18 +138,94 @@ I am passionate about delivering high-quality websites that provide a great user
       <p>I have successfully completed an e-commerce website called "AJIO" using Angular.
 
 Developed and completed "AJIO," an e-commerce website built with Angular, featuring product listings, user authentication, and cart management.</p>
+      <a href="./angularajio.mp4" class="project-btn">View Project</a>
+    </div>
+    <div class="project-card">
+      <img src="./csp.jpg" alt="CSP Project">
+      <h3>Community Service Project</h3>
+      <p>I completed a CSP project titled "Healthy Habits for Life", where I developed an interactive platform to promote good daily habits. The project aims to educate users on nutrition, exercise, and mental well-being through engaging content.</p>
       <a href="#" class="project-btn">View Project</a>
     </div>
   </div>
 </section>
+
+<section id="certificates" class="certificates-section">
+  <h2 class="section-title" >Certificates</h2>
+  <div class="certificates-grid" style="padding-bottom: 100px;" >
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./joyofcomputing.jpg" alt="Certificate 1">
+        </div>
+        <div class="flip-card-back">
+          <h3>Joy Of Computing Using Python</h3>
+          <p style="padding-left: 45px;">NPTEL,July-October 2023</p>
+          <a href="./joyofcomputing.jpg">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./python.png" alt="Certificate 2">
+        </div>
+        <div class="flip-card-back">
+          <h3>Python(Basic)</h3>
+          <p style="padding-left: 75px;">Hackerrank,June-2023</p>
+          <a href="./python.png">View Certificate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./iotcertificate.jpg" alt="Certificate 3">
+        </div>
+        <div class="flip-card-back">
+          <h3>Internet Of Things</h3>
+          <p style="padding-left: 60px;">NPTEL,January-April 2024</p>
+          <a href="./iotcertificate.jpg">View Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./appdevelopment.jpg" alt="Certificate 4">
+        </div>
+        <div class="flip-card-back">
+          <h3>Android App Development Using Kotlin</h3>
+          <p style="padding-left: 75px;"></p>
+          <a href="./appdevelopment.jpg">View Certificate</a>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./hackathon.jpg" alt="Certificate 5">
+        </div>
+        <div class="flip-card-back">
+          <h3>Hackathon</h3>
+          <p style="padding-left: 75px;"></p>
+          <a href="./hackathon.jpg">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 
 <!-- Contact -->
 
 <!-- Contact -->
 <section id="contact" class="contact-section">
-  <div class="contact-form">
-    <h2>Send Me a Message</h2>
+  <div class="contact-form" >
+    <h2 style="padding-top:7px">Send Me a Message</h2>
     <form action="#" method="POST">
       <div class="form-group">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -166,15 +243,30 @@ Developed and completed "AJIO," an e-commerce website built with Angular, featur
     </form>
   </div>
 
-  <div class="contact-details">
-    <h2>Contact Information</h2>
-    <div class="details">
-      <p><i class="fas fa-phone"> Phone:</i> +1 234 567 890</p>
-      <p><i class="fas fa-envelope"> Emailid:</i> info@example.com</p>
-      <p><i class="fab fa-linkedin">linkedin:</i> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    </div>
+
+  
+<!-- Footer -->
+<footer style="background-color: #282121; padding: 30px 20px; text-align: center;  ">
+  <div class="footer-links" style="margin-bottom: 20px;">
+    <a href="#home" style="margin: 0 15px; text-decoration: underline; color: #f6f0f0;">Home</a>
+    <a href="#about" style="margin: 0 15px; text-decoration: underline; color: #f6f0f0;">About</a>
+    <a href="#skills" style="margin: 0 15px; text-decoration: underline; color:#f6f0f0;">Skills</a>
+    <a href="#projects" style="margin: 0 15px; text-decoration: underline; color: #f6f0f0;">Projects</a>
+    <a href="#certificates" style="margin: 0 15px; text-decoration: underline; color: #f6f0f0;">Certificates</a>
+    <a href="#contact" style="margin: 0 15px; text-decoration: underline; color: #f6f0f0;">Contact</a>
   </div>
+  <div class="socialmedia-icons" style="padding-top: 10px;">
+  <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin" style="color:#edeff8"></i></a>
+  <a href="https://www.facebook.com/login.php"><i class="fa-brands fa-facebook" style="color:#eff0f5"></i></a>
+  <a href="https://github.com/" aria-label="GitHub"><i class="fab fa-github" style="color: #f2e8e8;"></i></a>
+    <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram" style="color: #f8ebf0;"></i></a>
+  
+  </div>
+
+</footer>
 </section>
+
+
 
 </body>
 </html>
