@@ -134,6 +134,28 @@ p {
   padding-left: 90px;
    font-size: 18px;
 }
+.resume {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.resume-button {
+  padding: 10px 20px;
+  background-color: #5e60ce;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-button:hover {
+  background-color: #3f41a1;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 .animated-text {
   display: inline-block;
   overflow: hidden;
@@ -728,6 +750,31 @@ p {
     left: 0;
     width: 100%;
   }
+  .resume {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .resume-button {
+    padding: 12px 24px;
+    background-color: #5e60ce;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-button:hover {
+    background-color: #3f41a1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
 
   nav .menu-toggle:checked + .hamburger + ul {
     display: flex;
