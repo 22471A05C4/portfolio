@@ -138,6 +138,10 @@ p {
   margin-top: 20px;
   display: flex;
   gap: 15px;
+  justify-content: flex-start; /* Align buttons to left */
+  width: 100%;  /* Take full width */
+  flex-wrap: wrap;
+  padding-left: 90px; /* same left padding as paragraph text */
 }
 
 .resume-button {
@@ -962,3 +966,9 @@ p {
   }
 }
 
+@media (max-width: 768px) {
+  .resume {
+    justify-content: center;
+    padding-left: 0; /* center on small screens if desired */
+  }
+}
